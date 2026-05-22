@@ -85,27 +85,11 @@ a      { text-decoration: none; color: inherit; }
   border-bottom-color: var(--accent-dark);
 }
 
-/* ── Hamburger (hidden on desktop) ── */
-.nav-hamburger {
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 22px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--black);
-  padding: 4px 8px;
-  line-height: 1;
-}
 
 /* ── Mobile collapse ── */
 @media (max-width: 768px) {
-  .nav-hamburger { display: block; }
 
-  .nav-links {
+  /* .nav-links {
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -119,7 +103,7 @@ a      { text-decoration: none; color: inherit; }
     padding: 11px 0;
     border-bottom: 1px solid rgba(0,0,0,0.07);
     font-size: 13px;
-  }
+  } */
 
   .topnav.open .nav-links { display: flex; }
 }
@@ -177,6 +161,7 @@ background:
   color: var(--accent);
   border: 1.5px solid var(--accent);
   padding: 5px 14px;
+  margin-top: 24px;
   margin-bottom: 22px;
   text-transform: uppercase;
 }
@@ -636,7 +621,7 @@ background:
    MENU PAGE (video hero, menu panel)
    ============================================ */
 .menu-hero {
-  margin-top: 0;
+  margin-top: 120px;
   position: relative;
   width: 100%;
   height: clamp(240px, 45vw, 540px);
