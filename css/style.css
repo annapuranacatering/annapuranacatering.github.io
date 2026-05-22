@@ -11,8 +11,8 @@
   --gray:        #6a6a6a;
   --footer-bg:   #888888;
   --white:       #ffffff;
-  --font-display: 'Georgia', 'Times New Roman', serif;
-  --font-body:    'Trebuchet MS', 'Lucida Sans', sans-serif;
+  --font-display: 'Yatra One', 'Times New Roman', serif;
+  --font-body:    'Noto Sans', 'Lucida Sans', sans-serif;
 }
 
 /* ---------- Reset & Base ---------- */
@@ -52,7 +52,7 @@ a      { text-decoration: none; color: inherit; }
   font-family: var(--font-display);
   font-size: clamp(22px, 3.5vw, 42px);
   font-weight: 900;
-  letter-spacing: 4px;
+  /* letter-spacing: 4px; */
   text-align: center;
 }
 
@@ -134,14 +134,14 @@ a      { text-decoration: none; color: inherit; }
   min-height: clamp(480px, 78vh, 780px);
 background: 
   linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-  url('../images/hero.webp') center/cover no-repeat;
+  url('../images/hero.jpg') center/cover no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 0 60px clamp(28px, 7vw, 100px);
   overflow: hidden;
 }
@@ -940,6 +940,10 @@ background:
   transition: opacity .2s;
 }
 .btn.cancel:hover { opacity: .75; }
+
+p {
+  font-size: 22px;
+}
 
 @media (max-width: 480px) {
   .booking-controls { flex-direction: column; align-items: stretch; }
