@@ -375,7 +375,7 @@ background:
 
 @media (max-width: 768px) {
   .image-box { flex-direction: column; }
-  .img1 img, .img2 img { height: 230px; }
+  .img1 img, .img2 img { height: 100%; }
 }
 
 
