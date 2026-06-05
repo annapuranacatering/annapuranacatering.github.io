@@ -366,7 +366,8 @@ background:
 
 .img1 img, .img2 img {
   width: 100%;
-  height: clamp(200px, 35vw, 500px);
+  height: 100%;
+  padding: 50px;
   object-fit: cover;
   transition: transform .4s ease;
 }
